@@ -1,6 +1,8 @@
 import React from 'react'
 import { useRef, useState } from 'react'
 import { BiSend } from 'react-icons/bi'
+import ButtonSend from '../components/ButtonSend'
+import ButtonSendDone from '../components/ButtonSendDone'
 // import styled from 'styled-components'
 
 const Page4 = () => {
@@ -48,7 +50,7 @@ const Page4 = () => {
                     <input type="text" name="pesan" placeholder='Your pesan *' />
                 </div> */}
                     <div className="input-style">
-                        <button className='bg-slate-400 px-4 py-2 rounded-xl' type="submit" onClick={() => console.log('berhasil')} ><span>{loading ? "Pesan Terkirim!" : "Kirim"}</span></button>
+                        <button className='text-white px-4 py-1 rounded-full bg-green-400 border-2 border-orange-300' type="submit" onClick={() => console.log('berhasil')} >{loading ? <ButtonSendDone /> : <ButtonSend />}</button>
                     </div>
                 </form>
             </div>
