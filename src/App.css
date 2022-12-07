@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.font-lato {
+  font-family: "Lato", sans-serif;
+}
+
+.font-josefin-sans {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.mplus1p {
+  font-family: "M PLUS 1p", sans-serif !important;
+}
+
+.font-elsie-swash {
+  font-family: "Elsie Swash Caps", cursive;
+}
+
+.font-alexBrush {
+  font-family: "Alex Brush", cursive;
+}
+.font-Playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.font-Poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.animate-blinkk {
+  animation-name: blink;
+  /* animation-duration: 3000ms; */
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

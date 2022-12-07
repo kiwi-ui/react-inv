@@ -3,6 +3,10 @@ import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-
 import Cover from "./pages/Cover"
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import Kerangka from "./pages/Kerangka";
+import Coba from "./pages/Coba";
+import Cover3 from "./pages/cover2/Cover3";
+import './App.css'
 // function dynamicElement() {
 //   return (
 //     <p>Tujuan Undangan</p>
@@ -14,12 +18,11 @@ import Home from "./pages/Home";
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Kerangka /> */}
       <Routes>
-        {/* <Route path="/" element={<WelcomePage />} /> */}
         <Route path="/:personName" element={<WelcomePage />} />
-        <Route path="/:personName/cover" element={<Cover />} />
-        <Route path="/:personName/home" element={<Home />} />
+        <Route path="/:personName/main" element={<Cover3 />} />
+        <Route path="/:personName/main2" element={<Kerangka />} />
       </Routes>
     </Router>
   );
