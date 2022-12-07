@@ -35,21 +35,21 @@ const Cover3 = () => {
     }, []);
 
     const objetComponent = [
-        // {
-        //     id: 1,
-        //     page: <Page1 />,
-        //     status: 'active'
-        // },
-        // {
-        //     id: 2,
-        //     page: <Page2 />,
-        //     status: 'active'
-        // },
-        // {
-        //     id: 3,
-        //     page: <Page3 />,
-        //     status: ''
-        // },
+        {
+            id: 1,
+            page: <Page1 />,
+            status: 'active'
+        },
+        {
+            id: 2,
+            page: <Page2 />,
+            status: 'active'
+        },
+        {
+            id: 3,
+            page: <Page3 />,
+            status: ''
+        },
         {
             id: 4,
             page: <Page4 />,
