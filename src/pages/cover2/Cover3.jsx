@@ -22,7 +22,7 @@ const Cover3 = () => {
     const [selected, setSelected] = useState(0);
 
     const back = () => {
-        setSelected(selected => Math.max(selected - 1, 1));
+        setSelected(selected => Math.max(selected - 1, 0));
     };
 
     const next = () => {
