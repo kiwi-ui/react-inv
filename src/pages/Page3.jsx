@@ -44,8 +44,8 @@ const Page3 = () => {
     return (
         <>
             {zoom ? (
-                <div className='text-center relative h-fit bg-[#EAEBE3] flex flex-col justify-center py-20'>
-                    <h5 className='font-alexBrush text-5xl sm:text-3xl font-extrabold text-black'>
+                <div className='text-center relative h-full bg-white flex flex-col justify-center text-[#808080] py-20'>
+                    <h5 className='font-alexBrush text-5xl sm:text-3xl font-extrabold text-[#808080]'>
                         Galeri
                     </h5>
                     {/* <button className="bg-blue-200 text-black active:bg-blue-500 
@@ -59,9 +59,9 @@ const Page3 = () => {
                         naturalSlideHeight={window.innerWidth < 880 ? 175 : 40}
                         totalSlides={3}>
                         <Slider className='h-full px-2' onClick={() => { setZoom(false) }}>
-                            <Slide index={0}><img className='rounded-full border-[#E9BE6A] border-4' src={imgGalleery1}></img></Slide>
-                            <Slide index={1}><img className='rounded-full border-[#E9BE6A] border-4' src={imgGalleery2}></img></Slide>
-                            <Slide index={2}><img className='rounded-full border-[#E9BE6A] border-4' src={imgGalleery3}></img></Slide>
+                            <Slide index={0}><img className='rounded-full border-[#817289] border-y-4' src={imgGalleery1}></img></Slide>
+                            <Slide index={1}><img className='rounded-full border-[#817289] border-y-4' src={imgGalleery2}></img></Slide>
+                            <Slide index={2}><img className='rounded-full border-[#817289] border-y-4' src={imgGalleery3}></img></Slide>
                         </Slider>
                         <div className='flex flex-row absolute w-1/2 justify-between px-4 left-1/4 md:left-0 md:w-full top-[50%] text-white'>
                             <ButtonBack><GrPrevious size={"2rem"} /></ButtonBack>

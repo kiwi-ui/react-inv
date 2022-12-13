@@ -29,20 +29,20 @@ const Page4 = () => {
         <>
             {/* <div className='w-full bg-white'> */}
 
-            <h5 className='absolute font-alexBrush text-5xl sm:text-3xl font-extrabold text-black pt-10 w-full text-center'>
+            <h5 className='absolute font-alexBrush text-5xl sm:text-3xl font-extrabold text-[#817289] pt-10 w-full text-center'>
                 Harapan
             </h5>
             <div className="w-full bg-white h-full">
 
                 <form className='bg-white shadow-md rounded px-10 pt-6 pb-8 mb-4 flex h-full flex-col content-center justify-center' ref={formRef} onSubmit={handleSubmit} name="google-sheet">
                     <div className="input-style mb-4">
-                        <label htmlFor='name' className='block text-gray-700 text-sm font-bold mb-2'>
-                            Name
+                        <label htmlFor='name' className='block text-[#817289] text-sm font-bold mb-2'>
+                            Nama
                         </label>
                         <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" id="name" name="name" placeholder='Nama' />
                     </div>
                     <div className="input-style mb-6">
-                        <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='name' >Pesan</label>
+                        <label className='block text-[#817289] text-sm font-bold mb-2' htmlFor='name' >Pesan</label>
                         <input type="text" name="pesan" placeholder='Pesan' className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                     </div>
                     {/* <div className="input-style">
@@ -50,7 +50,7 @@ const Page4 = () => {
                     <input type="text" name="pesan" placeholder='Your pesan *' />
                 </div> */}
                     <div className="input-style">
-                        <button className='text-white px-4 py-1 rounded-full bg-green-400 border-2 border-orange-300' type="submit" onClick={() => console.log('berhasil')} >{loading ? <ButtonSendDone /> : <ButtonSend />}</button>
+                        <button className='text-white px-4 py-1 rounded-full border-[#817289] border-y-4 text-[#817289]' type="submit" onClick={() => console.log('berhasil')} >{loading ? <ButtonSendDone /> : <ButtonSend />}</button>
                     </div>
                 </form>
             </div>

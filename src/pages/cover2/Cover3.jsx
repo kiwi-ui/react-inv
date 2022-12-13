@@ -12,18 +12,21 @@ import Page5 from '../Page5.jsx'
 import Sound from '../../components/Sound/Sound.jsx'
 import Snowfall from 'react-snowfall';
 import { MdSwipe } from 'react-icons/md'
-
-
+import Page6 from '../Page6.jsx';
+import borderflowerPurple1 from '../../Assets/border/border-flowerPurple1.png';
+import borderflowerPurple2 from '../../Assets/border/border-flowerPurple2.png';
+import borderelementPurple1 from '../../Assets/border/border2-elementPurple1.png';
+import borderelementPurple2 from '../../Assets/border/border2-elementPurple2.png';
 const Cover3 = () => {
 
     const [selected, setSelected] = useState(0);
 
     const back = () => {
-        setSelected(selected => Math.max(selected - 1, 0));
+        setSelected(selected => Math.max(selected - 1, 1));
     };
 
     const next = () => {
-        setSelected(selected => Math.min(selected + 1, 0));
+        setSelected(selected => Math.min(selected + 1, 5));
     };
 
     const [disappear, setDisappear] = useState(true)
@@ -53,13 +56,18 @@ const Cover3 = () => {
         {
             id: 4,
             page: <Page4 />,
-            status: ''
+            status: 'active'
         },
-        // {
-        //     id: 5,
-        //     page: <Page5 />,
-        //     status: ""
-        // },
+        {
+            id: 5,
+            page: <Page5 />,
+            status: ""
+        },
+        {
+            id: 6,
+            page: <Page6 />,
+            status: 'active'
+        },
     ]
 
     return (
@@ -74,14 +82,23 @@ const Cover3 = () => {
                 images={images}
                 // radius={[10, 20]}
         snowflakeCount={80} /> */}
-            <div className='w-full h-screen bg-[url("Assets/green-flower-background.jpg")] bg-cover bg-no-repeat flex justify-center items-center overflow-hidden'>
+            <img src={borderflowerPurple2} alt="" srcset="" className='w-1/4 absolute z-10 md:w-[45%] md:h-1/3 h-[45%] opacity-60' />
+            <img src={borderflowerPurple1} alt="" srcset="" className='w-1/4 absolute z-10 md:w-[45%] md:h-1/3 h-[45%] bottom-0 right-0  opacity-60' />
+            {/* <img src={borderelementPurple2} alt="" srcset="" className='w-1/4 absolute z-0 md:w-[40%] h-[30%] top-0 right-0' /> */}
+            {/* <img src={borderelementPurple1} alt="" srcset="" className='w-1/4 absolute z-0 md:w-[40%] h-[30%] bottom-0 left-0 ' /> */}
+            <div className='w-full 
+            h-screen bg-white
+            bg-[url("Assets/bg-purpleFlower.jpg")]
+            bg-cover bg-center bg-no-repeat flex justify-center items-center overflow-hidden'>
                 <div className='flex items-center justify-center w-11/12 h-[80%]'>
                     <div className='relative w-full h-full '>
-                        <div className='h-full border-4 border-[#E9BE6A] rounded-xl'>
+                        <div className='h-full border-4 
+                         rounded-xl border-[#817289] '>
                             <FlippingPages
                                 direction="right-to-left"
                                 onSwipeEnd={setSelected}
                                 selected={selected}
+                            // disableSwipe={true}
                             >
                                 {/* <div className="page page1">Page 1</div>
                                 <div className="page page2">Page 2</div>
