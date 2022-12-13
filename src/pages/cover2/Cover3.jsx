@@ -122,7 +122,7 @@ const Cover3 = () => {
                         </div>
                         <div className='flex flex-row justify-evenly'>
                             <button onClick={back}>Back</button>
-                            <button onClick={next}>Next</button>
+                            <button onClick={next} className='z-30'>Next</button>
                         </div>
                         <div className='flex justify-end py-6'>
 
