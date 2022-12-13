@@ -48,11 +48,11 @@ const Cover3 = () => {
             page: <Page2 />,
             status: ''
         },
-        {
-            id: 3,
-            page: <Page3 />,
-            status: ''
-        },
+        // {
+        //     id: 3,
+        //     page: <Page3 />,
+        //     status: ''
+        // },
         {
             id: 4,
             page: <Page4 />,
