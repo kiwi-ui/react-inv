@@ -22,11 +22,11 @@ const Cover3 = () => {
     const [selected, setSelected] = useState(0);
 
     const back = () => {
-        setSelected(selected => Math.max(selected - 1, 5));
+        setSelected(selected => Math.max(selected - 1, 1));
     };
 
     const next = () => {
-        setSelected(selected => Math.min(selected + 1, 5));
+        setSelected(selected => Math.min(selected + 1, 1));
     };
 
     const [disappear, setDisappear] = useState(true)
