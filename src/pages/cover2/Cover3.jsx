@@ -26,7 +26,7 @@ const Cover3 = () => {
     };
 
     const next = () => {
-        setSelected(selected => Math.min(selected + 1, 1));
+        setSelected(selected => Math.min(selected + 1, 5));
     };
 
     const [disappear, setDisappear] = useState(true)
