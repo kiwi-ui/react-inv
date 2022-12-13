@@ -17,9 +17,9 @@ const Page6 = () => {
                 <div className='border-[#817289] border-y-4 flex flex-row  items-center  md:w-[60%] w-[25%] h-fit gap-6  rounded-full px-2 pl-5 py-2 md:gap-1'>
                     <BsFillTelephoneFill /> 082336420166
                 </div>
-                <div className='border-[#817289] border-y-4 flex flex-row  items-center md:w-[60%] md:text-sm w-[25%] h-fit gap-7 rounded-full px-2 pl-3 py-2 md:gap-1'>
+                {/* <div className='border-[#817289] border-y-4 flex flex-row  items-center md:w-[60%] md:text-sm w-[25%] h-fit gap-7 rounded-full px-2 pl-3 py-2 md:gap-1'>
                     <BsMusicNoteBeamed /> Beauty and the Beast - Ariana Grande & John Legend (Adera & Nadin Amizah Cover)
-                </div>
+                </div> */}
             </div>
         </>
     )

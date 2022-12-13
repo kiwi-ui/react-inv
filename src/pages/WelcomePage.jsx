@@ -41,7 +41,9 @@ const WelcomePage = () => {
     let { personName } = useParams()
     console.log(personName)
     return (
-        <section className="w-screen h-screen font-Poppins text-black grid grid-flow-row items-end bg-blend-darken bg-[url('./pages/cover.png')] bg-no-repeat  bg-clip-padding bg-origin-padding bg-top">
+        <section className="w-screen h-screen font-Poppins text-black grid grid-flow-row items-end bg-blend-darken 
+        bg-[url('./pages/cover.png')]
+        bg-no-repeat  bg-clip-padding bg-origin-padding bg-top">
             {/* <img src={require('../Assets/cover.png')} alt="cover"></img> */}
             <div className='absolute z-10 w-screen h-screen bg-white/10'></div>
             <div className='grid items-end w-full grid-flow-row p-5 content-evenly h-3/5'>

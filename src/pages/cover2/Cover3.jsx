@@ -41,12 +41,12 @@ const Cover3 = () => {
         {
             id: 1,
             page: <Page1 />,
-            status: 'active'
+            status: ''
         },
         {
             id: 2,
             page: <Page2 />,
-            status: 'active'
+            status: ''
         },
         {
             id: 3,
@@ -56,7 +56,7 @@ const Cover3 = () => {
         {
             id: 4,
             page: <Page4 />,
-            status: 'active'
+            status: ''
         },
         {
             id: 5,
@@ -66,7 +66,7 @@ const Cover3 = () => {
         {
             id: 6,
             page: <Page6 />,
-            status: 'active'
+            status: ''
         },
     ]
 
@@ -120,10 +120,10 @@ const Cover3 = () => {
                                 })}
                             </FlippingPages>
                         </div>
-                        {/* <div className='flex flex-row justify-evenly'>
-                            <button onClick={back} className='animate-pulse italic'>Swipe</button>
+                        <div className='flex flex-row justify-evenly'>
+                            <button onClick={back}>Back</button>
                             <button onClick={next}>Next</button>
-                        </div> */}
+                        </div>
                         <div className='flex justify-end py-6'>
 
                             {/* <MdSwipe color='grey' size={50} className='animate-swipee' /> */}
