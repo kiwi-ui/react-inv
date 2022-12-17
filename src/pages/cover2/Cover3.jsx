@@ -116,8 +116,8 @@ const Cover3 = () => {
                             </FlippingPages>
                         </div>
                         <div className=' pt-3 flex flex-row w-[98%] justify-evenly z-0'>
-                            <button onClick={back} className='rounded-full border-[0.2rem] border-[#817289] bg-transparent '><BsCaretLeft size={'3rem'} fill='#817289' /></button>
-                            <button onClick={next} className='rounded-full border-[0.2rem] border-[#817289] bg-transparent'><BsCaretRight size={'3rem'} fill='#817289' /></button>
+                            <button onClick={back} className='rounded-full border-[0.2rem] border-[#817289] bg-transparent '><BsCaretLeft size={'2rem'} fill='#817289' /></button>
+                            <button onClick={next} className='rounded-full border-[0.2rem] border-[#817289] bg-transparent'><BsCaretRight size={'2rem'} fill='#817289' /></button>
                         </div>
                         {/* <div className='flex justify-end py-6'> */}
 
