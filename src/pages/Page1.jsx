@@ -35,7 +35,7 @@ const Page1 = () => {
                         <div className={`py-4 px-3 -my-11 sm:w-10/12 relative bg-white rounded-lg border-y-4 border-[#817289] shadow-slate-500 shadow-xl`}>
                             <img src={bgForCardName} alt="" srcset="" className='opacity-60 absolute top-0  left-4 h-20' />
                             <img src={bgForCardName} alt="" srcset="" className='opacity-60 absolute top-0 right-4  h-20 transform -scale-x-100' />
-                            <h4 className='font-alexBrush font-bold text-4xl py-6'>Putri Cangrawatih</h4>
+                            <h4 className='font-alexBrush font-bold text-4xl py-6'>Pengantin Wanita</h4>
                             <p className='font-Playfair pb-6'>Putri dari Bapak Ahmad &amp; Ibu Rahayu</p>
                         </div>
                         <a className='z-10' href="https://google.com" target='_blank' rel='noreferrer noopener'>
@@ -49,7 +49,7 @@ const Page1 = () => {
                         <div className={`py-4 px-3 -my-11 sm:w-10/12 relative bg-white rounded-lg border-y-4 border-[#817289] shadow-slate-500 shadow-xl`}>
                             <img src={bgForCardName} alt="" srcset="" className='opacity-60 absolute top-0  left-4 h-20' />
                             <img src={bgForCardName} alt="" srcset="" className='opacity-60 absolute top-0 right-4  h-20 transform -scale-x-100' />
-                            <h4 className='font-alexBrush font-bold text-4xl py-6'>Perdi Sabun</h4>
+                            <h4 className='font-alexBrush font-bold text-4xl py-6'>Pengantin Laki-laki</h4>
                             <p className='font-Playfair pb-6'>Putri dari Bapak Rahmad &amp; Ibu Nuruli</p>
                         </div>
                         <a className='z-10' href="https://google.com" target='_blank' rel='noreferrer noopener'>
