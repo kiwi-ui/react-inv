@@ -4,6 +4,7 @@ import { BiSend } from 'react-icons/bi'
 import ButtonSend from '../components/ButtonSend'
 import ButtonSendDone from '../components/ButtonSendDone'
 // import styled from 'styled-components'
+import forPage4 from '../Assets/border/forPage4.png'
 
 const Page4 = () => {
     const formRef = useRef(null)
@@ -28,31 +29,35 @@ const Page4 = () => {
     return (
         <>
             {/* <div className='w-full bg-white'> */}
-
-            <h5 className='absolute font-alexBrush text-5xl sm:text-3xl font-extrabold text-[#817289] pt-10 w-full text-center'>
-                Harapan
-            </h5>
-            <div className="w-full bg-white h-full">
-
-                <form className='bg-white shadow-md rounded px-10 pt-6 pb-8 mb-4 flex h-full flex-col content-center justify-center' ref={formRef} onSubmit={handleSubmit} name="google-sheet">
+            <div className=' absolute w-full bg-white'>
+                <img src={forPage4} className=" w-[30rem] md:w-64 pt-11 z-10 mx-auto" />
+            </div>
+            <div className="w-full h-full bg-white ">
+                <form className='bg-transparent  rounded px-10 flex h-[90%] flex-col content-center justify-center' ref={formRef} onSubmit={handleSubmit} name="google-sheet">
+                    <h5 className='relative font-alexBrush text-5xl sm:text-3xl font-extrabold text-[#817289] pt-10 w-full text-center'>
+                        Harapan
+                    </h5>
                     <div className="input-style mb-4">
                         <label htmlFor='name' className='block text-[#817289] text-sm font-bold mb-2'>
                             Nama
                         </label>
-                        <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" id="name" name="name" placeholder='Nama' />
+                        <input className="shadow-md appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" id="name" name="name" placeholder='Nama' />
                     </div>
                     <div className="input-style mb-6">
                         <label className='block text-[#817289] text-sm font-bold mb-2' htmlFor='name' >Pesan</label>
-                        <input type="text" name="pesan" placeholder='Pesan' className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+                        <input type="text" name="pesan" placeholder='Pesan' className="shadow-md appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
                     </div>
                     {/* <div className="input-style">
                     <label htmlFor='name'>Pesan</label>
                     <input type="text" name="pesan" placeholder='Your pesan *' />
                 </div> */}
-                    <div className="input-style">
-                        <button className='text-white px-4 py-1 rounded-full border-[#817289] border-y-4 text-[#817289]' type="submit" onClick={() => console.log('berhasil')} >{loading ? <ButtonSendDone /> : <ButtonSend />}</button>
+                    <div className="w-fit shadow-xl bg-transparent rounded-full">
+                        <button className='px-4 py-1 shadow-xxl rounded-full border-[#817289] border-y-4 text-[#817289]' type="submit" onClick={() => console.log('berhasil')} >{loading ? <ButtonSendDone /> : <ButtonSend />}</button>
                     </div>
                 </form>
+                <div className='absolute w-full bg-white'>
+                    <img src={forPage4} className=" w-[30rem] md:w-64  z-10 mx-auto rotate-180" />
+                </div>
             </div>
             {/* </div> */}
         </>

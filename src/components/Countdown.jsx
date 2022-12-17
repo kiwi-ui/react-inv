@@ -46,25 +46,25 @@ const Countdown = (props) => {
         <>
             {expiryTime !== false ?
                 <div className='text-[#808080] relative flex flex-row items-center justify-center w-full gap-5 py-4 sm:gap-3 h-fit md:flex-warp'>
-                    <div className='flex flex-col p-5 bg-white rounded-lg border-y-4 border-[#817289] sm:p-3 '>
+                    <div className='flex flex-col p-5 bg-white rounded-lg border-y-4 border-[#817289] sm:p-3 shadow-slate-500 shadow-xl'>
                         <button type="button" className="btn btn-outline-success">
                             {countdownTime.countdownDays}
                         </button>
                         <p>Hari</p>
                     </div>
-                    <div className='flex flex-col p-5 bg-white rounded-lg border-y-4 border-[#817289] sm:p-3'>
+                    <div className='flex flex-col p-5 bg-white rounded-lg border-y-4 border-[#817289] sm:p-3 shadow-slate-500 shadow-xl'>
                         <button type="button" className="btn btn-outline-success">
                             {countdownTime.countdownHours}
                         </button>
                         <p>Jam</p>
                     </div>
-                    <div className='flex flex-col p-5 bg-white rounded-lg border-y-4 border-[#817289] sm:p-3'>
+                    <div className='flex flex-col p-5 bg-white rounded-lg border-y-4 border-[#817289] sm:p-3 shadow-slate-500 shadow-xl'>
                         <button type="button" className="btn btn-outline-success">
                             {countdownTime.countdownMinutes}
                         </button>
                         <p>Menit</p>
                     </div>
-                    <div className='flex flex-col p-5 bg-white rounded-lg border-y-4 border-[#817289] sm:p-3'>
+                    <div className='flex flex-col p-5 bg-white rounded-lg border-y-4 border-[#817289] sm:p-3 shadow-slate-500 shadow-xl'>
                         <button type="button" className="btn btn-outline-success">
                             {countdownTime.countdownSeconds}
                         </button>

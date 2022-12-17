@@ -1,10 +1,16 @@
 import React from 'react'
 import { BsFillTelephoneFill, BsMusicNoteBeamed, BsInstagram } from 'react-icons/bs'
 import digitionPict from '../Assets/Digition.png'
+import forPage6 from '../Assets/border/forPage6.png'
+
 
 const Page6 = () => {
     return (
         <>
+            <div className=' absolute w-full bg-transparent z-10 h-full flex flex-col justify-between'>
+                <img src={forPage6} className=" w-[15rem] md:w-64 pt-11 z-10 mx-auto" />
+                <img src={forPage6} className=" w-[15rem] md:w-64 pt-11 z-10 mx-auto rotate-180" />
+            </div>
             <div className='flex flex-col w-full h-full items-center justify-center bg-white gap-10 relative'>
                 {/* <h1 className='absolute top-20 font-alexBrush  text-[#817289] text-5xl sm:text-3xl font-extrabold  text-center '  >
                     Copyright

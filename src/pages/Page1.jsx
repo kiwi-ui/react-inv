@@ -31,27 +31,31 @@ const Page1 = () => {
                 </div>
                 <div className='flex flex-row justify-center w-full py-5 sesifoto  h-1/3 sm:flex-col'>
                     <div className='flex flex-col items-center h-max'>
-                        <img src={bride} alt="bride" srcset="" width={'70%'} className="rounded-lg sm:w-11/12 border-4 " />
-                        <div className={`py-4 px-3 -my-11 sm:w-10/12 relative bg-white rounded-lg border-y-4 border-[#817289]`}>
+                        <img src={bride} alt="bride" srcset="" width={'70%'} className="rounded-lg shadow-slate-500 shadow-xl sm:w-11/12 border-4 " />
+                        <div className={`py-4 px-3 -my-11 sm:w-10/12 relative bg-white rounded-lg border-y-4 border-[#817289] shadow-slate-500 shadow-xl`}>
                             <img src={bgForCardName} alt="" srcset="" className='opacity-60 absolute top-0  left-4 h-20' />
                             <img src={bgForCardName} alt="" srcset="" className='opacity-60 absolute top-0 right-4  h-20 transform -scale-x-100' />
                             <h4 className='font-alexBrush font-bold text-4xl py-6'>Putri Cangrawatih</h4>
                             <p className='font-Playfair pb-6'>Putri dari Bapak Ahmad &amp; Ibu Rahayu</p>
                         </div>
-                        <button className='w-14 h-14 my-4 flex justify-center items-center border-[#817289] border-y-4 rounded-full 
+                        <a className='z-10' href="https://google.com" target='_blank' rel='noreferrer noopener'>
+                            <button className='w-14 h-14 my-4 flex justify-center items-center border-[#817289] border-y-4 rounded-full 
                         bg-slate-50 z-20 shadow-xl shadow-[#817289]'><GrInstagram className='text-2xl  text-[#817289] font-extrabold' /></button>
+                        </a>
                     </div>
 
                     <div className='flex flex-col items-center h-max'>
-                        <img src={groom} alt="bride" srcset="" width={'70%'} className="rounded-lg sm:w-11/12 border-4 " />
-                        <div className={`py-4 px-3 -my-11 sm:w-10/12 relative bg-white rounded-lg border-y-4 border-[#817289]`}>
+                        <img src={groom} alt="bride" srcset="" width={'70%'} className="rounded-lg sm:w-11/12 border-4 shadow-slate-500 shadow-xl" />
+                        <div className={`py-4 px-3 -my-11 sm:w-10/12 relative bg-white rounded-lg border-y-4 border-[#817289] shadow-slate-500 shadow-xl`}>
                             <img src={bgForCardName} alt="" srcset="" className='opacity-60 absolute top-0  left-4 h-20' />
                             <img src={bgForCardName} alt="" srcset="" className='opacity-60 absolute top-0 right-4  h-20 transform -scale-x-100' />
                             <h4 className='font-alexBrush font-bold text-4xl py-6'>Perdi Sabun</h4>
                             <p className='font-Playfair pb-6'>Putri dari Bapak Rahmad &amp; Ibu Nuruli</p>
                         </div>
-                        <button className='w-14 h-14 my-4 flex justify-center items-center border-[#817289] border-y-4 rounded-full 
+                        <a className='z-10' href="https://google.com" target='_blank' rel='noreferrer noopener'>
+                            <button className='w-14 h-14 my-4 flex justify-center items-center border-[#817289] border-y-4 rounded-full 
                         bg-slate-50 z-20 shadow-xl shadow-[#817289]'><GrInstagram className='text-2xl  text-[#817289] font-extrabold' /></button>
+                        </a>
                     </div>
                 </div>
                 {/* <img src={border} alt="" className='h-48 w-9/12 rounded-2xl' /> */}

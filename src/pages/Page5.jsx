@@ -1,9 +1,14 @@
 import React from 'react'
 import digitionPict from '../Assets/Digition.png'
 import { BsFillTelephoneFill } from 'react-icons/bs'
+import forPage5 from '../Assets/border/forPage5.png'
+
 const Page5 = () => {
     return (
         <>
+            <div className=' absolute w-full bg-transparent z-10 h-full flex flex-col justify-between'>
+                <img src={forPage5} className=" w-[15rem] md:w-64 pt-11 z-10 mx-auto" />
+            </div>
             <div className='flex flex-col font-Poppins h-full w-full bg-white overflow-y-scroll justify-center items-center gap-6 '>
                 <div className='text-center '>
                     <h2>
